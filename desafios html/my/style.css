@@ -1,0 +1,45 @@
+@charset "UTF-8";
+:root{
+    --cor-principal: rgba(120, 255, 210, 0.445);
+}
+body{
+    background-image: url(R.jpeg);
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */ background-position: center; /* Centraliza a imagem */ background-repeat: no-repeat; /* Evita que a imagem se repita */ height: 100vh;
+    font-family:monospace;
+    margin:0%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+header> h1{
+    padding-top: 10%;
+    font-family: cursive;
+    padding: 1em;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+}
+section{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+section> div{
+    position: relative;
+    width: 450px;
+    height: 30px;
+    border-radius: 2em;
+    background-color: var(--cor-principal);
+}
+section>h1{
+    margin: 0%;
+}
+
+
+
