@@ -1,6 +1,11 @@
 @charset "UTF-8";
 :root{
-    --cor-principal: rgba(120, 255, 210, 0.445);
+    --cor-principal: rgba(36, 49, 45, 0.26);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+
 }
 body{
     background-image: url(R.jpeg);
@@ -9,35 +14,39 @@ body{
     margin:0%;
     align-items: center;
     justify-content: center;
-
-
-}
-
-header> h1{
-    padding-top: 10%;
-    font-family: cursive;
-    padding: 1em;
-    text-align: center;
-}
-
-main{
-    width: 80%;
-    padding: 20px;
-    display: flex;
 }
 section{
+    font-family: serif;
+    margin: auto;
+    max-width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    height: 150px;
+    padding: 60px;
+    border-radius: 10px;
+}
+main{
+    background-color: rgba(34, 34, 34, 0.212);
     margin: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
-section> div{
+main h1 {
+    font-size: 50px;
+    color: darkorange;
+    text-align: center;
+    padding-top: 80px;
+}
+main  div{
     position: relative;
     width: 450px;
     height: 30px;
     border-radius: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.377);
     background-color: var(--cor-principal);
 }
-section>h1{
+main h2{
+    text-indent: 10px;
+    font-size: 19px;
     margin: 0%;
 }
 
