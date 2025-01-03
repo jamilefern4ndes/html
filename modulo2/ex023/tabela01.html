@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela simples</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        :root{
+            --corfundo: #006eff;
+            --corespecial: #00ff4c;
+            --corclass: #ff009d;
+        }
+        table{
+            background-color: var(--corfundo);
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+        }
+        .especial{
+            background-color: var(--corclass);
+        }
+        #especial{
+            background-color: var(--corespecial);
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMLO TABELA SIMPLES</h1>
+    <table> <!--tabela-->
+        <tr id="especial"> <!--linha-->
+            <td>a1</td> <!--dado-->
+            <td>b1</td>
+            <td>c1</td>
+            <td></td> 
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td class="especial">c2</td>
+
+        </tr>
+        <tr>
+            <td class="especial">a3</td>
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>b4</td>
+            <td></td>
+            <td>d4</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="especial"></td>
+            <td>c5</td>
+        </tr>
+    </table>
+</body>
+</html>
