@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabels Grandes</title>
+    <title>Tabelas Grandes</title>
     <style>
         *{
             font-family: arial;
         }
+        body{
+            background-color: rgb(211, 255, 124);
+        }
+
         table{
             width: 500px;
             text-align: center;
             border-collapse: collapse;
         }
-        thead{
+        thead, tfoot{
             background-color: blueviolet;
             color: aliceblue;
         }
@@ -23,7 +27,14 @@
         }
         caption{
             font-size: 1.5em;
+            color: white;
             background-color: blueviolet;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(160, 147, 147);
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
         }
         .num{
             text-align: right;
