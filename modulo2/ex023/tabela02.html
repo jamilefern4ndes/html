@@ -13,6 +13,7 @@
         }
 
         table{
+            position: relative;
             width: 500px;
             text-align: center;
             border-collapse: collapse;
@@ -20,6 +21,11 @@
         thead, tfoot{
             background-color: blueviolet;
             color: aliceblue;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: blueviolet;
         }
         th, tr, td {
             height: 40px;
@@ -38,6 +44,9 @@
         }
         .num{
             text-align: right;
+        }
+        p{
+            width: 100px;
         }
     </style>
 </head>
@@ -98,5 +107,6 @@
             <td class="num"><strong>4292200405</strong></td>
         </tfoot>
     </Table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quaerat ratione. Quidem dolore eligendi repellat, explicabo dolorem consequuntur quibusdam incidunt officia accusamus atque placeat hic laboriosam cupiditate dolor ipsa tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint perferendis officia laborum officiis voluptatibus eaque reprehenderit vel quibusdam labore modi? Facere nisi et repudiandae harum nobis odit cupiditate officiis exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae explicabo repudiandae deserunt veniam, nostrum possimus officiis amet corrupti dolorum ratione quibusdam, fugiat labore nisi reprehenderit debitis molestiae qui earum placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos beatae necessitatibus repellat natus totam sit sint ex unde, eius optio, tempore officia aperiam magni deserunt! Dolore laborum pariatur adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam suscipit natus saepe aliquam voluptatibus, iusto, ab possimus sit deleniti quisquam eius temporibus vitae deserunt provident alias eaque ad cupiditate maxime.</p>
 </body>
 </html>
