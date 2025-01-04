@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabels Grandes</title>
+    <style>
+        *{
+            font-family: arial;
+        }
+        table{
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        th, tr, td {
+            height: 40px;
+            border: 1px solid black;
+        }
+        caption{
+            font-size: 1.5em;
+            background-color: blueviolet;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLO DE TABELA GRANDE </h1>
+    <Table>
+        <caption>População por UF</caption>
+        <Thead>
+            <tr>
+                <th>Estado</th>
+                <th scope="col" style="width: 80px;">População</th>
+            </tr>
+        </Thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 447</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>total</th>
+            <td class="num"><strong>4292200405</strong></td>
+        </tfoot>
+    </Table>
+</body>
+</html>

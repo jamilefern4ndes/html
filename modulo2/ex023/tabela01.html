@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela simples</title>
     <style>
-        *{
+        *{  
+            margin: 0%;
+            padding: 0%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         :root{
-            --corfundo: #006eff;
+            --corfundo: #006eff5b;
             --corespecial: #00ff4c;
             --corclass: #ff009d;
         }
@@ -18,50 +20,39 @@
             border-collapse: collapse;
         }
         td{
-            padding: 10px;
             border: 1px solid black;
-            width: 100px;
+            height: 200px;
+            width: 200px;
             text-align: center;
+            vertical-align: middle;
         }
-        .especial{
-            background-color: var(--corclass);
-        }
-        #especial{
-            background-color: var(--corespecial);
-        }
+
     </style>
 </head>
 <body>
     <h1>EXEMLO TABELA SIMPLES</h1>
     <table> <!--tabela-->
-        <tr id="especial"> <!--linha-->
+        <tr> <!--linha-->
             <td>a1</td> <!--dado-->
             <td>b1</td>
-            <td>c1</td>
-            <td></td> 
+            <td>c1</td> 
         </tr>
         <tr>
             <td>a2</td>
             <td>b2</td>
-            <td class="especial">c2</td>
+            <td>c2</td>
 
         </tr>
         <tr>
-            <td class="especial">a3</td>
+            <td>a3</td>
             <td>b3</td>
             <td>c3</td>
         </tr>
         <tr>
-            <td></td>
+            <td>a4</td>
             <td>b4</td>
-            <td></td>
-            <td>d4</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="especial"></td>
-            <td>c5</td>
-        </tr>
+            <td>c4</td>
+
     </table>
 </body>
 </html>
