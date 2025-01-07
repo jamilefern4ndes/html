@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tabela</title>
+    <style>
+        table{
+            font-family: arial;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        col.cinza{
+            background-color: rgb(182, 182, 182);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cinza">
+            <col class="sexo">
+            <col class="cinza">
+            <col class="prof">
+        </colgroup>
+        <caption>CADASTRO</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Letícia</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Estagiária</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Enfermeiro</td>
+        </tr>
+        <tr>
+            <td>Felipe</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Carpinteiro</td>
+        </tr>
+    </table>
+</body>
+</html>
