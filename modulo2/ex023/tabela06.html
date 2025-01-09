@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela responsiva</title>
+    <style>
+        table{
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead{
+            background-color: gray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tbody> tr:nth-child(even){
+            background-color: firebrick;
+            color: aliceblue;
+        }
+        #container{
+            overflow-x: auto;
+            /*se quiser pode adicionar o whidth*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Tabela Responsiva</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius possimus voluptates dolorem aliquam reprehenderit nobis fugiat laboriosam ducimus et aspernatur quaerat, assumenda veniam tempora minus asperiores accusamus distinctio architecto.</p>
+
+    <div id="container">
+        <table>
+            <caption>controle de vendas</caption>
+            <thead>
+                <th>Produto</th>
+                <th>JAN</th>
+                <th>FEV</th>
+                <th>MAR</th>
+                <th>ABR</th>
+                <th>MAI</th>
+                <th>JUN</th>
+                <th>JUL</th>
+                <th>AGO</th>
+                <th>SET</th>
+                <th>OUT</th>
+                <th>NOV</th>
+                <th>DEZ</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Geladeira</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Tv Smart</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Bicicleta</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Tanquinho</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Fogão</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
