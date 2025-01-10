@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegação no Iframe</title>
     <style>
+        body{
+            font-size: 0.8em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         iframe{
             width: 95vw;
             height: 250px;
             border: 2px solid black;
         }
+        ul{
+            columns: 3;
+        }
+        ul a{
+            color: aliceblue;
+            padding: 5px;
+            background-color: gray;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: rgb(95, 92, 92);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+
     <h1>Exemplo de navegação no Iframe</h1>
     <p>Escolha uma dessas páginas locais para visualizar no iframe</p>
     <ul>
@@ -20,7 +38,7 @@
         <li><a href="paginas/pag02.html" target="frame">Página 02</a></li>
         <li><a href="paginas/pag03.html" target="frame">Página 03</a></li>
     </ul>
-    <iframe name="frame" src="">
+    <iframe name="frame" src="paginas/inicial.html"
         <p>Seu Navegador não possui compatibilidade</p>
     </iframe>
 </body>
