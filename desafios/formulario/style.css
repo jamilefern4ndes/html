@@ -1,0 +1,44 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    font-family: Verdana;
+    font-weight: 500;
+}
+body{
+    background-color: lightsteelblue;
+}
+.container{
+    position: relative;
+}
+form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+h2{
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+fieldset{
+    display: inline-block;
+    width: 70vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+input{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 2px;
+}
+#idad{
+    width: 40px;
+}
+.botao:hover{
+    background-color: gray;
+    color: white;
+}

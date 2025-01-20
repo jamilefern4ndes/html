@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>formulario de inscrição</h2>
+    <div id="container">
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="Nome" id="inome" required>
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome" required>
+                </p>
+                <p>
+                    <label for="inos">Nome Social:</label>
+                    <input type="text" name="Nomeso" id="inos" placeholder="se houver">
+                </p>
+                <p>
+                    <label for="idad">Idade</label>
+                    <input type="number" name="Idade" id="idad" value="18" min="18">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(xx) Xxxxx-xxxx">
+                </p>
+                <p>
+                    <label for="imail">Email</label>
+                    <input type="email" name="email" id="imail" required placeholder="exemplo@gmail.com">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p >
+                    <input type="radio" name="sexo" id="ifem"><label for="ifem"> Feminino</label>
+                    <input type="radio" name="sexo" id="imas"><label for="imas"> Masculino</label>
+                    <input type="radio" name="sexo" id="inao"><label for="inao"> Prefiro Não informar</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Formaçao Acadêmica</legend>
+                <p >
+                    <input type="radio" name="formação" id="imed"><label for="imed"> Ensino Médio</label>
+                    <input type="radio" name="formação" id="itec"><label for="itec"> Técnico</label>
+                    <input type="radio" name="formação" id="igra"><label for="igra"> Graduação</label>
+                    <input type="radio" name="formação" id="ipos"><label for="ipos">Pós-Graduação</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Linguagens</legend>
+                <p>
+                    <input type="checkbox" name="html" id="ihtml"><label for="ihtml">Javascript</label><br>
+                    <input type="checkbox" name="php" id="iphp"><label for="iphp">PHP</label><br>
+                    <input type="checkbox" name="python" id="ipy"><label for="ipy">Python</label><br>
+                    <input type="checkbox" name="Java" id="ijava"><label for="ijava">Java</label><br>
+                    <input type="checkbox" name="c" id="ic"><label for="ic">C++</label><br>
+                    <input type="checkbox" name="swift" id="isw"><label for="isw">swift</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Idiomas</legend>
+                <p> 
+                    <label for="ingles"> ◆Inglês</label>
+                    <input type="range" name="ingles" id="ingles" value="1" max="5">
+                </p>
+                <p> 
+                    <label for="iesp"> ◆Espanhol</label>
+                    <input type="range" name="Esp" id="iesp" value="1" max="5">
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="enviar" class="botao">
+                <input type="reset" value="limpar" class="botao">
+            </p>
+        </form>
+
+    </div>
+</body>
+</html>
