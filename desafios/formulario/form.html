@@ -72,17 +72,36 @@
                 <legend>Idiomas</legend>
                 <p> 
                     <label for="ingles"> ◆Inglês</label>
-                    <input type="range" name="ingles" id="ingles" value="1" max="5">
+                    <input type="range" name="ingles" id="ingles" value="0" max="6">
                 </p>
                 <p> 
                     <label for="iesp"> ◆Espanhol</label>
-                    <input type="range" name="Esp" id="iesp" value="1" max="5">
+                    <input type="range" name="Esp" id="iesp" value="0" max="6">
+                </p>
+                <p>
+                    <label for="iout">◆Outro: </label>
+                    <input type="text" name="outro" id="iout" list="Idiomas">
+                    <datalist id="Idiomas">
+                        <option>Alemão</option>
+                        <option>Francês</option>
+                        <option>Japonês</option>
+                        <option>Mandarin</option>
+                        <option>Russo</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Biografia</legend>
+                <p>
+                    <p><label for="ibio">Adicione um breve texto sobre você:</label></p>
+                    <textarea name="Bio" id="ibio" rows="5" cols="40" required maxlength="300" placeholder="Até 300 caracteres"></textarea>
                 </p>
             </fieldset>
             <p>
                 <input type="submit" value="enviar" class="botao">
                 <input type="reset" value="limpar" class="botao">
             </p>
+
         </form>
 
     </div>

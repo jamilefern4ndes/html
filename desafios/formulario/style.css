@@ -5,12 +5,15 @@
     font-weight: 500;
 }
 body{
-    background-color: lightsteelblue;
+    padding: 10px;
+    background-color:lightcyan;
 }
 .container{
     position: relative;
 }
 form{
+    width: 80vw;
+    padding: 5px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -29,11 +32,15 @@ fieldset{
     margin: 5px;
     font-size: 14px;
 }
-input{
+input, textarea{
     background-color: transparent;
     border: 1px solid black;
     border-radius: 2px;
     margin: 2px;
+}
+input[type="range"]{
+    appearance: none;
+    height: 3px;
 }
 #idad{
     width: 40px;
