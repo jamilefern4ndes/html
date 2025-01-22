@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+menu{
+    background-color: maroon;
+    border-radius: 2px;
+}
+menu h1{
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.562);
+    text-align: center;
+    padding: 13px;
+}
+nav{
+    text-align: center;
+}
+menu a{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    margin-right: 1vw;
+    border-radius: 2px;
+}
+main{
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    text-align: justify;
+    height: 90vh;
+
+}
+main h2{
+    color: maroon;
+    display: inline-block;
+    margin: 7px 2px;
+    padding: 2px;
+}
+article{
+    margin: 10px;
+}
+main h3{
+    margin: 4px 2px;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
