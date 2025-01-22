@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Output</title>
+    <style>
+        body{
+            background-color: lightseagreen;
+        }
+        h2{
+            text-align: center;
+        }
+        fieldset{
+            background-color: white;
+            border-radius: 4px;
+        }
+        legend{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplos de output</h2>
+    <fieldset>
+        <legend>Soma</legend>
+        <form action="" method="get" autocomplete="off">
+            <p>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1"
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2"
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma: </label>
+                <output name="Soma" id="isoma">0</output>
+            </p>
+            <p>
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Legenda Range</legend>
+        <form action="" method="get">
+            <p>
+                <input type="range" name="idade" id="iid" min="0" max="100" value="0"
+                oninput="ival.innerHTML = Number(iid.value)">
+                <output id="ival">0</output>
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Leitor de ano</legend>
+        <p>
+            <label for="iano">Ano de Nascimento</label>
+            <input type="number" name="ano" id="iano" min="1900" value="2000"
+            oninput="calcidade()">
+          </p>  
+          <output id="iidade">0</output>
+    </fieldset>
+    <script>
+        function calcidade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
