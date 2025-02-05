@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width:700px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+}
+@media screen and (min-width:900px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#tablet{display: none;}
+    img#pc{display: block;}
+}
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
